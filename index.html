@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/letter.css">
+    <link rel="stylesheet" href="css/pulldown.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/es6-shim.min.js"></script>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .scroll {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 119px;
+        bottom: 65px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+            <section class="setInfo">
+                <div class="letteropTips">
+                    <span>!</span>
+                    <span>完善资料更容易受到异性的来信</span>
+                    <span></span>
+                </div>
+            </section>
+            <section class="letterTopNav">
+                <ul>
+                    <li>通知</li>
+                    <li class="pink">私信<span>36</span></li>
+                    <li>最近联系</li>
+                </ul>
+            </section>
+            <section class="page" id="index">
+                <div class="scroll content">
+                    <div class="pullDown">
+                        <span class="icon"></span><span class="pullDownLabel"></span>
+                    </div>
+                    <!-- 私信模板 -->
+                    <ul class="searchList_ul">
+                            <li>
+                                <a href="#">
+                                    <img src="http://pt.youyuan.com/resize/photo/n/n/n/200/200/201605/20/16/48/1463734127940A1FEF47_c.jpg" alt="" class="searchIMG">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <b class="tit">丑小鸭变形记</b>
+                                    <p class="bot">21岁·广东·172cm</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="distanceToMe">
+                                    17:35
+                                </span>
+                                <span class="say_hello">立即查看</span>
+                            </li>
+                    </ul>
+                    <!-- 最近联系模板 -->
+                    <ul class="searchList_ul">
+                            <li>
+                                <a href="#">
+                                    <img src="http://pt.youyuan.com/resize/photo/n/n/n/200/200/201605/20/16/48/1463734127940A1FEF47_c.jpg" alt="" class="searchIMG">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <b class="tit">丑小鸭变形记</b>
+                                    <p class="bot">21岁·广东·172cm</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="chatTa">聊天</span>
+                            </li>
+                    </ul>
+                   
+                    <div class="pullUp">
+                        <span class="icon"></span><span class="pullUpLabel"></span>
+                    </div>
+            </section>
+        </div>
+        <!-- 加载提示框 -->
+        <div class="globalLoading" style="display: none;">正在加载中...</div>
+        <div class="footer">
+            <section class="fiveFooter">
+                <ul>
+                    <li>缘分</li>
+                    <li>搜索</li>
+                    <li>信箱</li>
+                    <li>附近</li>
+                    <li>我</li>
+                </ul>
+            </section>
+        </div>
+</body>
+<script src="js/pulldown.js"></script>
+<script>
+var pull = new PullToRefresh({
+    el: '#index',
+    up: 1,
+    down: 1,
+    pulldownLength: 80,
+    pullupOffset: 60,
+    addNew: function() {
+        return new Promise(function(resolve, reject) {
+            setTimeout(function() {
+                console.log("刷新");
+                resolve();
+            }, 1000);
+        });
+
+    },
+    addMore: function() {
+        return new Promise(function(resolve, reject) {
+            $(".globalLoading").show();
+            setTimeout(function() {
+                $(".globalLoading").hide();
+                
+                
+                resolve();
+            }, 1000);
+        });
+
+    }
+});
+</script>
+</html>

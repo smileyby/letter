@@ -1,0 +1,144 @@
+a{text-decoration: none;}
+.setInfo{padding-left: 20px;
+	  height: 46px;
+            line-height: 47px;
+            display: block;
+            color: #7b7b7b;
+            border-bottom: 1px solid #d7d7d7;}
+.letteropTips span:nth-child(1){width: 24px;
+                                             height: 24px;
+                                             line-height: 25px;
+                                             text-align: center;
+                                             font-size: 18px;
+                                             font-weight: bold;
+                                             color: #ff6700;
+                                             display:inline-block;
+                                             border-radius: 50%;
+                                             border: 1px solid #ff6700;}
+.letteropTips span:nth-child(2){display: inline-block;
+                                             line-height: 47px;}  
+ .letteropTips span:nth-child(3){width: 8px;
+                                              height: 8px;
+                                              display: inline-block;
+                                              transform:rotate(45deg);
+                                              border-top: 2px solid #656565;
+                                              border-right: 2px solid #656565;}  
+.letterTopNav{overflow: hidden;}                                              
+.letterTopNav ul li{display: inline-block;
+                          float: left;
+                          width: 33.33%;
+                          height: 70px;
+                          font-weight: bold;
+                          color: #4f4f4f;
+                          text-align: center;
+                          line-height: 72px;
+                          border-bottom: 2px solid #dcdcdc;} 
+.letterTopNav ul li.pink{border-bottom: 2px solid #e93593;}  
+.letterTopNav ul li:nth-child(2){position: relative;}        
+.letterTopNav ul li:nth-child(2) span{display: inline-block;
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    position: absolute;
+                                                    right: 50%;
+                                                    top: 50%;
+                                                    color: #fff;
+                                                    padding: 4px;
+                                                    font-weight: bold;
+                                                    line-height: 20px;
+                                                    text-align: center;
+                                                    margin-right: -44px;
+                                                    margin-top: -24px;
+                                                    border-radius: 50%;
+                                                    background-color: #e93593;}                  
+.footer{display: block;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+           overflow:hidden;}
+.fiveFooter{display: block;
+	       width: 100%;
+	       height: 65px;
+	       overflow: hidden;}
+.fiveFooter ul{overflow:hidden;
+                     display:block;
+                     background-color:#F8F8F8;}	       
+.fiveFooter ul li{float: left;
+		 display:block;
+	            width: 20%;
+	            height:65px;
+	            font-size:14px;
+	            text-align:center;
+	            line-height:65px;}  
+/*列表样式*/
+.searchList_ul{    width: 100%;
+		    margin: 0;
+		    padding: 8px;
+		    box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    -webkit-box-sizing: border-box;
+		    -o-box-sizing: border-box;
+		    -ms-box-sizing: border-box;
+		    border-bottom: 1px solid #ECECEC;
+		    color: #999;
+		    background: #fff;
+		    overflow: hidden;
+		    position: relative;
+		    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);}
+.searchList_ul li{float: left;
+	              height:85px;
+	              display:inline-block;
+                        list-style:none;}		    
+.searchIMG{width: 80px;
+                   height: 85px;
+                   display:block;
+                   border-radius:3px;}	
+.searchList_ul li:nth-child(2){position: absolute;
+                                          left: 98px;
+                                          right: 8px;
+                                          top: 8px;
+                                          bottom: 8px;} 
+.searchList_ul li:nth-child(2) .tit{     display: block;
+				         padding: 8px 0;
+				         margin-bottom: 16px;
+				         color: #555;
+				         font: inherit;}    
+.searchList_ul li:nth-child(2) .bot{color: #555;
+                                                font-size: 14px;}
+.searchList_ul li:nth-child(3){width: 64px;
+                                         height: 85px;
+                                         position: absolute;
+                                         right: 8px;
+                                         top: 8px;
+                                         bottom: 8px;
+                                         z-index:100;}	
+.searchList_ul li:nth-child(3) .distanceToMe{   display: block;
+						    font-size: 12px;
+						    line-height: 20px;
+						    text-align: right;
+						    margin:8px 0 14px 0;}  
+.searchList_ul li:nth-child(3) .say_hello{         display: block;
+						    line-height: 26px;
+						    border: 1px solid #e93593;
+						    color: #e93593;
+						    text-align: center;
+						    border-radius: 3px;
+						    font-size: 13px;}
+.chatTa{display: block;
+            width: 100px;
+            height: 43px;
+            line-height: 44px;
+            border: 1px solid #e93593;
+            color: #e93593;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 18px;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -22px;}                	
+.distanceToMe img{      position: relative;
+			    top: 2px;
+			    left: -2px;
+			    width: 16px;
+			    height: 16px;}			                                                                                                                                                                    
